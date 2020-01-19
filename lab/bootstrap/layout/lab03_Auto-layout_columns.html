@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Bootstrap</title>
+    <style>
+        div {color: white;}
+        div:nth-of-type(4n-3) {background-color: #5d5b6a;}
+        div:nth-of-type(4n-2) {background-color: #758184;}
+        div:nth-of-type(4n-1) {background-color: #cfb495;}
+        div:nth-of-type(4n) {background-color: #f5cdaa;}
+    </style>    
+</head>
+<body>
+    <!-- https://getbootstrap.com/docs/4.4/layout/grid/#auto-layout-columns -->
+    <h1>자동-레이아웃 열</h1>
+
+    <h3>같은 폭</h3>
+    <!-- 
+        https://getbootstrap.com/docs/4.4/layout/grid/#equal-width
+        다음은 xs에서 xl까지 모든 장치 및 뷰포트에 적용되는 두 개의 그리드 레이아웃.
+        단위가 없는 클래스를 여러 개 추가하면 모든 열의 너비가 동일
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 2
+            </div>
+            <div class="col">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h3>여러 줄의 같은 너비 열</h3>
+    <!-- https://getbootstrap.com/docs/4.4/layout/grid/#equal-width-multi-line -->
+    <div class="container">
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="w-100"></div> <!-- 폭 100짜리 빈 태그를 삽입하여 줄바꿈 -->
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <hr>
+
+    <h3>한 열의 너비 조정</h3>
+    <!-- https://getbootstrap.com/docs/4.4/layout/grid/#setting-one-column-width -->
+    <!-- 
+        - 자동 레이아웃은 또한 한 열의 너비를 설정하고 형제 열의 크기를 자동으로 조정할 수 있음을 의미
+        - 미리 정의 된 그리드 클래스, 그리드 믹스 인 또는 인라인 너비를 사용할 수 있음
+        - 다른 열은 가운데 열의 너비에 관계없이 크기가 조정 (남은 너비를 등분해 가짐).
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            1 of 3
+            </div>
+            <div class="col-6">
+            <!-- col-?은 12분의 ?만큼 너비를 가져감 -->
+            2 of 3 (더 길게)
+            </div>
+            <div class="col">
+            3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            1 of 3
+            </div>
+            <div class="col-5">
+            2 of 3 (더 길게)
+            </div>
+            <div class="col">
+            3 of 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>

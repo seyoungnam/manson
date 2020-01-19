@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Bootstrap</title>
+    <style>
+        div {color: white;}
+        div:nth-of-type(4n-3) {background-color: #5d5b6a;}
+        div:nth-of-type(4n-2) {background-color: #758184;}
+        div:nth-of-type(4n-1) {background-color: #cfb495;}
+        div:nth-of-type(4n) {background-color: #f5cdaa;}
+    </style>    
+</head>
+<body>
+    <!-- https://getbootstrap.com/docs/4.4/layout/overview/#containers -->
+    <h1>Containers(컨테이너)</h1>
+    <!--
+        container(컨테이너)
+        - BootStrap에서 가장 기본적인 레이아웃 요소이며 기본 Grid 시스템을 사용할 때 필요
+        - 내용물을 담고, 여백을 씌우고 가운데에 정렬하는 데 사용
+        - .container : 사이즈별 적절한 폭 값으로 설정해 줌
+        - .container-fluid : 어떤 사이즈든 폭은 브라우저의 100%
+        - .container-{breakpoint} : breakpoint로 설정한 사이즈까지 폭이 브라우저의 100%, 나머지는 적절한 폭 값
+        - 576 / 768 / 992 / 1200 순으로 변함 (각각 sm, md, lg, xl의 기준)
+        - sm과 기본 container는 실질적으로 같음
+    -->
+    <div class="container">container</div>
+    <div class="container-sm">container-sm</div>
+    <div class="container-md">container-md</div>
+    <div class="container-lg">container-lg</div>
+    <div class="container-xl">container-xl</div>
+    <div class="container-fluid">container-fluid</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
